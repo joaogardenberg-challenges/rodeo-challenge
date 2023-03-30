@@ -43,7 +43,7 @@ export default function Invoice() {
         <header className="page-header">
           <h1 className="page-title">
             <span>Invoice</span>
-            <span hidden> for </span>
+            <span hidden>: </span>
             <span className="invoice-name">{name}</span>
           </h1>
         </header>
