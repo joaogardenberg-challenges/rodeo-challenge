@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/rodeo-challenge/static/js/main.61391485.js",
+    "main.js": "/rodeo-challenge/static/js/main.fde0caf9.js",
     "static/js/787.032b456e.chunk.js": "/rodeo-challenge/static/js/787.032b456e.chunk.js",
     "index.html": "/rodeo-challenge/index.html",
-    "main.61391485.js.map": "/rodeo-challenge/static/js/main.61391485.js.map",
+    "main.fde0caf9.js.map": "/rodeo-challenge/static/js/main.fde0caf9.js.map",
     "787.032b456e.chunk.js.map": "/rodeo-challenge/static/js/787.032b456e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.61391485.js"
+    "static/js/main.fde0caf9.js"
   ]
 }
