@@ -15,17 +15,12 @@ export const PhaseContext = createContext<PhaseType>({
 })
 
 const StyledPhase = styled.section`
-  /* border-left: 1px solid #999;
-  border-radius: 0.25rem; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* padding: 1rem; */
 
   .phase-name {
-    /* border-bottom: 1px solid #333; */
     font-size: 1.25rem;
-    /* padding-bottom: 1rem; */
     text-align: center;
   }
 `
