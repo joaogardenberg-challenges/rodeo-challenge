@@ -16,22 +16,24 @@ export const getInvoicePriceWithTax = ({
   feeOrDiscountPercent
 }: Invoice) => {
   const phasesPricesWithTax = phases.map(({ costItems, feeOrDiscount }) => {
-    const costItemsPricesWithTax = costItems.map((costItem) => {
-      const price = getCostItemPrice(costItem)
+    const costItemsPricesWithTax = costItems.length
+      ? costItems.map((costItem) => {
+          const price = getCostItemPrice(costItem)
 
-      // I don't think this is the right way of spreading the Phase's
-      // fee/discount throughout the cost items, but it'll take too long
-      // to figure something else out.
-      const priceWithFeeOrDiscount = Math.max(
-        price + (feeOrDiscount || 0) / costItems.length,
-        0
-      )
+          // I don't think this is the right way of spreading the Phase's
+          // fee/discount throughout the cost items, but it'll take too long
+          // to figure something else out.
+          const priceWithFeeOrDiscount = Math.max(
+            price + (feeOrDiscount || 0) / costItems.length,
+            0
+          )
 
-      const priceWithFeeOrDiscountPercent =
-        priceWithFeeOrDiscount * (1 + (feeOrDiscountPercent || 0) / 100)
+          const priceWithFeeOrDiscountPercent =
+            priceWithFeeOrDiscount * (1 + (feeOrDiscountPercent || 0) / 100)
 
-      return priceWithFeeOrDiscountPercent * (1 + costItem.tax / 100)
-    })
+          return priceWithFeeOrDiscountPercent * (1 + costItem.tax / 100)
+        })
+      : [Math.max(feeOrDiscount || 0, 0)]
 
     return sum(costItemsPricesWithTax)
   })
