@@ -2,6 +2,8 @@
 
 [Demo page](https://joaogardenberg-challenges.github.io/rodeo-challenge/)
 
+[Instructions](/Instructions.pdf)
+
 **Note 1: The mocking is dynamic, both in content and in size. Every time you refresh the page, a new randomly-generated invoice is rendered.**
 
 **Note 2: Although I'm used to having these kinds of price calculations made in the backend, in this challenge they were made in the frontend instead, just for the sake of it, since the challenge doesn't require a backend.**
