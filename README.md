@@ -1,6 +1,6 @@
 # Rodeo Challenge
 
-## [Demo page](https://joaogardenberg-challenges.github.io/rodeo-challenge/)
+[Demo page](https://joaogardenberg-challenges.github.io/rodeo-challenge/)
 
 ## Install the dependencies
 
