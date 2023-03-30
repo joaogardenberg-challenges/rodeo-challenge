@@ -7,7 +7,7 @@ export default styled.main`
   width: 60rem;
 
   .page-header {
-    padding: 0 1rem 1rem;
+    padding: 1rem 1rem 2rem;
   }
 
   .page-title {
@@ -26,7 +26,7 @@ export default styled.main`
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .separator {

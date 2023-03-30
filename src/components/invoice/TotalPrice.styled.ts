@@ -5,7 +5,7 @@ export default styled.section`
   flex-direction: column;
   font-size: 1.2rem;
   gap: 1rem;
-  margin: 2rem 1rem;
+  padding: 3rem 1rem;
 
   .total-title {
     font-size: 2rem;
