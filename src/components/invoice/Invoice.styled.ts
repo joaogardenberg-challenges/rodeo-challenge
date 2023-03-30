@@ -65,7 +65,8 @@ export default styled.main`
 
       .cost-item__tax,
       .cost-item__description,
-      .cost-item__price {
+      .cost-item__price,
+      .cost-item__number {
         font-family: 'Roboto Mono', monospace;
         font-size: 0.9em;
       }

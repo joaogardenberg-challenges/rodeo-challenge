@@ -52,8 +52,11 @@ export default function TotalPrice() {
         {Boolean(feeOrDiscountPercent) && (
           <li className="cost-item cost-item--total">
             <span className="cost-item__name">
-              Subtotal price with {feeOrDiscountText} ({feeOrDiscountSymbol}{' '}
-              {formatPercent(Math.abs(feeOrDiscountPercent))}%)
+              Subtotal price with {feeOrDiscountText}{' '}
+              <span className="cost-item__number">
+                ({feeOrDiscountSymbol}{' '}
+                {formatPercent(Math.abs(feeOrDiscountPercent))}%)
+              </span>
             </span>
             <span hidden>: </span>
             <span className="cost-item__tax" />
