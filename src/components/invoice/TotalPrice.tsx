@@ -39,6 +39,12 @@ export default function TotalPrice() {
     <StyledTotalPrice className="total-price-section">
       <h2 className="total-title">Total</h2>
       <ol className="total-prices">
+        <li className="cost-item cost-item--labels" aria-hidden>
+          <span className="cost-item__name" />
+          <span className="cost-item__tax" />
+          <span className="cost-item__description">Description</span>
+          <span className="cost-item__price">Price</span>
+        </li>
         <li className="cost-item cost-item--total">
           <span className="cost-item__name">Subtotal price</span>
           <span hidden>: </span>
