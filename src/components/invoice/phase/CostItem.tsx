@@ -13,8 +13,9 @@ export default function CostItem({ costItem }: CostItemProps) {
   const { currency } = useContext(InvoiceContext)
   const currencySymbol = getCurrencySymbol(currency)
   const { billedPerUnit, name, price, tax, hours, units } = costItem
-  const quantity = billedPerUnit ? units || 1 : hours || 1
   const totalPrice = getCostItemPrice(costItem)
+  const quantity = billedPerUnit ? units || 1 : hours || 1
+  const formattedQuantity = `${quantity < 10 ? '0' : ''}${quantity}`
 
   const costUnit = useMemo(
     () => `${billedPerUnit ? 'unit' : 'hour'}${quantity === 1 ? '' : 's'}`,
@@ -30,7 +31,7 @@ export default function CostItem({ costItem }: CostItemProps) {
       <span hidden>, Description: </span>
       <span className="cost-item__description">
         {currencySymbol}
-        {formatPrice(price)} x {quantity} {costUnit}
+        {formatPrice(price)} x {formattedQuantity} {costUnit}
       </span>
       <span hidden>, Price: </span>
       <span className="cost-item__price">
