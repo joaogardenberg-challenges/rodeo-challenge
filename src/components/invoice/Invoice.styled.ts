@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export default styled.main`
+export const StyledInvoice = styled.main`
   margin: 0 auto;
   max-width: 100%;
   padding: 1rem;
@@ -95,4 +95,10 @@ export default styled.main`
       width: 8rem;
     }
   }
+`
+
+export const StyledLoading = styled.main`
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
 `

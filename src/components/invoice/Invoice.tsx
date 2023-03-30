@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from 'react'
 import { Invoice as InvoiceType, Phase as PhaseType } from 'types'
 import mockRequest from 'services/mockRequest'
-import StyledInvoice from './Invoice.styled'
+import { StyledInvoice, StyledLoading } from './Invoice.styled'
 import Phase from './phase/Phase'
 import TotalPrice from './TotalPrice'
 
@@ -13,22 +13,17 @@ export const InvoiceContext = createContext<InvoiceType>({
 
 export default function Invoice() {
   const [invoice, setInvoice] = useState<InvoiceType>()
-  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    setLoading(true)
-
-    mockRequest()
-      .then(({ data }) => setInvoice(data?.invoice))
-      .finally(() => setLoading(false))
+    mockRequest().then(({ data }) => setInvoice(data?.invoice))
   }, [])
 
-  if (loading) {
-    return <StyledInvoice>Loading...</StyledInvoice>
-  }
-
   if (!invoice) {
-    return null
+    return (
+      <StyledLoading data-testid="loading">
+        <p className="loading">Loading invoice...</p>
+      </StyledLoading>
+    )
   }
 
   const { name, phases } = invoice
@@ -39,9 +34,9 @@ export default function Invoice() {
 
   return (
     <InvoiceContext.Provider value={invoice}>
-      <StyledInvoice>
+      <StyledInvoice data-testid="invoice">
         <header className="page-header">
-          <h1 className="page-title">
+          <h1 className="page-title" data-testid="title">
             <span>Invoice</span>
             <span hidden>: </span>
             <span className="invoice-name">{name}</span>

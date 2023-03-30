@@ -1,0 +1,464 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TotalPrice Renders successfully with discountPercent 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 1rem;
+  padding: 3rem 1rem;
+}
+
+.c0 .total-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+<div>
+  <section
+    class="c0 total-price-section"
+  >
+    <h2
+      class="total-title"
+    >
+      Total
+    </h2>
+    <ol
+      class="total-prices"
+    >
+      <li
+        aria-hidden="true"
+        class="cost-item cost-item--labels"
+      >
+        <span
+          class="cost-item__name"
+        />
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+        >
+          Description
+        </span>
+        <span
+          class="cost-item__price"
+        >
+          Price
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+        >
+          Subtotal price
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+        />
+        <span
+          class="cost-item__price"
+          data-testid="subtotal-price"
+        >
+          $
+          10.00
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+          data-testid="fee-or-discount-label"
+        >
+          Subtotal price with 
+          discount
+           
+          <span
+            class="cost-item__number"
+          >
+            (
+            -
+             
+            6
+            %)
+          </span>
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+          data-testid="fee-or-discount-amount"
+        >
+          -
+           
+          $
+          6.00
+        </span>
+        <span
+          hidden=""
+        >
+           = 
+        </span>
+        <span
+          class="cost-item__price"
+          data-testid="fee-or-discount-price"
+        >
+          $
+          4.00
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+        >
+          Total price with tax
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+          data-testid="tax-amount"
+        >
+          + 
+          $
+          2.00
+        </span>
+        <span
+          hidden=""
+        >
+           = 
+        </span>
+        <span
+          class="cost-item__price"
+          data-testid="total-price"
+        >
+          $
+          6.00
+        </span>
+      </li>
+    </ol>
+  </section>
+</div>
+`;
+
+exports[`TotalPrice Renders successfully with feePercent 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 1rem;
+  padding: 3rem 1rem;
+}
+
+.c0 .total-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+<div>
+  <section
+    class="c0 total-price-section"
+  >
+    <h2
+      class="total-title"
+    >
+      Total
+    </h2>
+    <ol
+      class="total-prices"
+    >
+      <li
+        aria-hidden="true"
+        class="cost-item cost-item--labels"
+      >
+        <span
+          class="cost-item__name"
+        />
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+        >
+          Description
+        </span>
+        <span
+          class="cost-item__price"
+        >
+          Price
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+        >
+          Subtotal price
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+        />
+        <span
+          class="cost-item__price"
+          data-testid="subtotal-price"
+        >
+          $
+          10.00
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+          data-testid="fee-or-discount-label"
+        >
+          Subtotal price with 
+          fee
+           
+          <span
+            class="cost-item__number"
+          >
+            (
+            +
+             
+            6
+            %)
+          </span>
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+          data-testid="fee-or-discount-amount"
+        >
+          +
+           
+          $
+          6.00
+        </span>
+        <span
+          hidden=""
+        >
+           = 
+        </span>
+        <span
+          class="cost-item__price"
+          data-testid="fee-or-discount-price"
+        >
+          $
+          16.00
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+        >
+          Total price with tax
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+          data-testid="tax-amount"
+        >
+          + 
+          $
+          2.00
+        </span>
+        <span
+          hidden=""
+        >
+           = 
+        </span>
+        <span
+          class="cost-item__price"
+          data-testid="total-price"
+        >
+          $
+          18.00
+        </span>
+      </li>
+    </ol>
+  </section>
+</div>
+`;
+
+exports[`TotalPrice Renders successfully without feeOrDiscountPercent 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 1rem;
+  padding: 3rem 1rem;
+}
+
+.c0 .total-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+<div>
+  <section
+    class="c0 total-price-section"
+  >
+    <h2
+      class="total-title"
+    >
+      Total
+    </h2>
+    <ol
+      class="total-prices"
+    >
+      <li
+        aria-hidden="true"
+        class="cost-item cost-item--labels"
+      >
+        <span
+          class="cost-item__name"
+        />
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+        >
+          Description
+        </span>
+        <span
+          class="cost-item__price"
+        >
+          Price
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+        >
+          Subtotal price
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+        />
+        <span
+          class="cost-item__price"
+          data-testid="subtotal-price"
+        >
+          $
+          10.00
+        </span>
+      </li>
+      <li
+        class="cost-item cost-item--total"
+      >
+        <span
+          class="cost-item__name"
+        >
+          Total price with tax
+        </span>
+        <span
+          hidden=""
+        >
+          : 
+        </span>
+        <span
+          class="cost-item__tax"
+        />
+        <span
+          class="cost-item__description"
+          data-testid="tax-amount"
+        >
+          + 
+          $
+          2.00
+        </span>
+        <span
+          hidden=""
+        >
+           = 
+        </span>
+        <span
+          class="cost-item__price"
+          data-testid="total-price"
+        >
+          $
+          12.00
+        </span>
+      </li>
+    </ol>
+  </section>
+</div>
+`;

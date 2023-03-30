@@ -1,12 +1,12 @@
 import { useContext } from 'react'
 import getCurrencySymbol from 'utils/getCurrencySymbol'
-import { InvoiceContext } from 'components/invoice/Invoice'
 import formatPrice from 'utils/formatPrice'
 import {
   getPhasePrice,
   getPhasePriceWithFeeOrDiscount,
   getPhasePriceWithTax
 } from 'utils/phasePrice'
+import { InvoiceContext } from 'components/invoice/Invoice'
 import { PhaseContext } from './Phase'
 
 export default function SubtotalPrice() {
@@ -38,24 +38,30 @@ export default function SubtotalPrice() {
         <span hidden>: </span>
         <span className="cost-item__tax" />
         <span className="cost-item__description" />
-        <span className="cost-item__price">
+        <span className="cost-item__price" data-testid="subtotal-price">
           {currencySymbol}
           {formatPrice(subtotalPrice)}
         </span>
       </li>
       {Boolean(feeOrDiscount) && (
         <li className="cost-item cost-item--subtotal">
-          <span className="cost-item__name">
+          <span className="cost-item__name" data-testid="fee-or-discount-label">
             Phase's subtotal price with {feeOrDiscountText}
           </span>
           <span hidden>: </span>
           <span className="cost-item__tax" />
-          <span className="cost-item__description">
+          <span
+            className="cost-item__description"
+            data-testid="fee-or-discount-amount"
+          >
             {feeOrDiscountSymbol} {currencySymbol}
             {formatPrice(Math.abs(feeOrDiscount))}
           </span>
           <span hidden> = </span>
-          <span className="cost-item__price">
+          <span
+            className="cost-item__price"
+            data-testid="fee-or-discount-price"
+          >
             {currencySymbol}
             {formatPrice(subtotalWithFeeOrDiscount)}
           </span>
@@ -65,12 +71,12 @@ export default function SubtotalPrice() {
         <span className="cost-item__name">Phase's total price with tax</span>
         <span hidden>: </span>
         <span className="cost-item__tax" />
-        <span className="cost-item__description">
+        <span className="cost-item__description" data-testid="tax-amount">
           + {currencySymbol}
           {formatPrice(taxAmount)}
         </span>
         <span hidden> = </span>
-        <span className="cost-item__price">
+        <span className="cost-item__price" data-testid="total-price">
           {currencySymbol}
           {formatPrice(subtotalWithTax)}
         </span>

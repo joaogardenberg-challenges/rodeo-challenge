@@ -2,6 +2,7 @@ import { useContext, useMemo } from 'react'
 import { CostItem as CostItemType } from 'types'
 import getCurrencySymbol from 'utils/getCurrencySymbol'
 import formatPrice from 'utils/formatPrice'
+import formatPercent from 'utils/formatPercent'
 import { getCostItemPrice } from 'utils/costItemPrice'
 import { InvoiceContext } from 'components/invoice/Invoice'
 
@@ -25,16 +26,20 @@ export default function CostItem({ costItem }: CostItemProps) {
   return (
     <li className="cost-item">
       <span hidden>Name: </span>
-      <span className="cost-item__name">{name}</span>
+      <span className="cost-item__name" data-testid="name">
+        {name}
+      </span>
       <span hidden>, Tax: </span>
-      <span className="cost-item__tax">{tax}%</span>
+      <span className="cost-item__tax" data-testid="tax">
+        {formatPercent(tax)}%
+      </span>
       <span hidden>, Description: </span>
-      <span className="cost-item__description">
+      <span className="cost-item__description" data-testid="description">
         {currencySymbol}
         {formatPrice(price)} x {formattedQuantity} {costUnit}
       </span>
       <span hidden>, Price: </span>
-      <span className="cost-item__price">
+      <span className="cost-item__price" data-testid="price">
         {currencySymbol}
         {formatPrice(totalPrice)}
       </span>

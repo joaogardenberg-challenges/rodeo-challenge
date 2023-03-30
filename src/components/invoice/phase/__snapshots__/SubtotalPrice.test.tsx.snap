@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubtotalPrice Renders successfully with discount 1`] = `
+<div>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+    >
+      Phase's subtotal price
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+    />
+    <span
+      class="cost-item__price"
+      data-testid="subtotal-price"
+    >
+      $
+      10.00
+    </span>
+  </li>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+      data-testid="fee-or-discount-label"
+    >
+      Phase's subtotal price with 
+      discount
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+      data-testid="fee-or-discount-amount"
+    >
+      -
+       
+      $
+      6.00
+    </span>
+    <span
+      hidden=""
+    >
+       = 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="fee-or-discount-price"
+    >
+      $
+      4.00
+    </span>
+  </li>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+    >
+      Phase's total price with tax
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+      data-testid="tax-amount"
+    >
+      + 
+      $
+      2.00
+    </span>
+    <span
+      hidden=""
+    >
+       = 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="total-price"
+    >
+      $
+      6.00
+    </span>
+  </li>
+</div>
+`;
+
+exports[`SubtotalPrice Renders successfully with fee 1`] = `
+<div>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+    >
+      Phase's subtotal price
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+    />
+    <span
+      class="cost-item__price"
+      data-testid="subtotal-price"
+    >
+      $
+      10.00
+    </span>
+  </li>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+      data-testid="fee-or-discount-label"
+    >
+      Phase's subtotal price with 
+      fee
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+      data-testid="fee-or-discount-amount"
+    >
+      +
+       
+      $
+      6.00
+    </span>
+    <span
+      hidden=""
+    >
+       = 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="fee-or-discount-price"
+    >
+      $
+      16.00
+    </span>
+  </li>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+    >
+      Phase's total price with tax
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+      data-testid="tax-amount"
+    >
+      + 
+      $
+      2.00
+    </span>
+    <span
+      hidden=""
+    >
+       = 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="total-price"
+    >
+      $
+      18.00
+    </span>
+  </li>
+</div>
+`;
+
+exports[`SubtotalPrice Renders successfully without feeOrDiscount 1`] = `
+<div>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+    >
+      Phase's subtotal price
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+    />
+    <span
+      class="cost-item__price"
+      data-testid="subtotal-price"
+    >
+      $
+      10.00
+    </span>
+  </li>
+  <li
+    class="cost-item cost-item--subtotal"
+  >
+    <span
+      class="cost-item__name"
+    >
+      Phase's total price with tax
+    </span>
+    <span
+      hidden=""
+    >
+      : 
+    </span>
+    <span
+      class="cost-item__tax"
+    />
+    <span
+      class="cost-item__description"
+      data-testid="tax-amount"
+    >
+      + 
+      $
+      2.00
+    </span>
+    <span
+      hidden=""
+    >
+       = 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="total-price"
+    >
+      $
+      12.00
+    </span>
+  </li>
+</div>
+`;

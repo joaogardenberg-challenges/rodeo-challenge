@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CostItem Renders successfully with 1 hour 1`] = `
+<div>
+  <li
+    class="cost-item"
+  >
+    <span
+      hidden=""
+    >
+      Name: 
+    </span>
+    <span
+      class="cost-item__name"
+      data-testid="name"
+    >
+      Cost item name
+    </span>
+    <span
+      hidden=""
+    >
+      , Tax: 
+    </span>
+    <span
+      class="cost-item__tax"
+      data-testid="tax"
+    >
+      9
+      %
+    </span>
+    <span
+      hidden=""
+    >
+      , Description: 
+    </span>
+    <span
+      class="cost-item__description"
+      data-testid="description"
+    >
+      $
+      10.00
+       x 
+      01
+       
+      hour
+    </span>
+    <span
+      hidden=""
+    >
+      , Price: 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="price"
+    >
+      $
+      100.00
+    </span>
+  </li>
+</div>
+`;
+
+exports[`CostItem Renders successfully with 1 unit 1`] = `
+<div>
+  <li
+    class="cost-item"
+  >
+    <span
+      hidden=""
+    >
+      Name: 
+    </span>
+    <span
+      class="cost-item__name"
+      data-testid="name"
+    >
+      Cost item name
+    </span>
+    <span
+      hidden=""
+    >
+      , Tax: 
+    </span>
+    <span
+      class="cost-item__tax"
+      data-testid="tax"
+    >
+      9
+      %
+    </span>
+    <span
+      hidden=""
+    >
+      , Description: 
+    </span>
+    <span
+      class="cost-item__description"
+      data-testid="description"
+    >
+      $
+      10.00
+       x 
+      01
+       
+      unit
+    </span>
+    <span
+      hidden=""
+    >
+      , Price: 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="price"
+    >
+      $
+      100.00
+    </span>
+  </li>
+</div>
+`;
+
+exports[`CostItem Renders successfully with multiple hours 1`] = `
+<div>
+  <li
+    class="cost-item"
+  >
+    <span
+      hidden=""
+    >
+      Name: 
+    </span>
+    <span
+      class="cost-item__name"
+      data-testid="name"
+    >
+      Cost item name
+    </span>
+    <span
+      hidden=""
+    >
+      , Tax: 
+    </span>
+    <span
+      class="cost-item__tax"
+      data-testid="tax"
+    >
+      9
+      %
+    </span>
+    <span
+      hidden=""
+    >
+      , Description: 
+    </span>
+    <span
+      class="cost-item__description"
+      data-testid="description"
+    >
+      $
+      10.00
+       x 
+      10
+       
+      hours
+    </span>
+    <span
+      hidden=""
+    >
+      , Price: 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="price"
+    >
+      $
+      100.00
+    </span>
+  </li>
+</div>
+`;
+
+exports[`CostItem Renders successfully with multiple units 1`] = `
+<div>
+  <li
+    class="cost-item"
+  >
+    <span
+      hidden=""
+    >
+      Name: 
+    </span>
+    <span
+      class="cost-item__name"
+      data-testid="name"
+    >
+      Cost item name
+    </span>
+    <span
+      hidden=""
+    >
+      , Tax: 
+    </span>
+    <span
+      class="cost-item__tax"
+      data-testid="tax"
+    >
+      9
+      %
+    </span>
+    <span
+      hidden=""
+    >
+      , Description: 
+    </span>
+    <span
+      class="cost-item__description"
+      data-testid="description"
+    >
+      $
+      10.00
+       x 
+      10
+       
+      units
+    </span>
+    <span
+      hidden=""
+    >
+      , Price: 
+    </span>
+    <span
+      class="cost-item__price"
+      data-testid="price"
+    >
+      $
+      100.00
+    </span>
+  </li>
+</div>
+`;

@@ -38,8 +38,10 @@ export default function Phase({ phase }: PhaseProps) {
 
   return (
     <PhaseContext.Provider value={phase}>
-      <StyledPhase className="phase-section">
-        <h3 className="phase-name">{name}</h3>
+      <StyledPhase className="phase-section" data-testid="phase-container">
+        <h3 className="phase-name" data-testid="phase-name">
+          {name}
+        </h3>
         <ol className="cost-items">
           <li className="cost-item cost-item--labels" aria-hidden>
             <span className="cost-item__name">Name</span>
