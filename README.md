@@ -14,6 +14,8 @@
 
 **Note 6: I went over 8 hours while writing the React components' tests, because I got my head so deep into it.**
 
+**Note 7: I wasn't sure what you meant by designing the API endpoints while using GraphQL, so I just made the mockRequest service with the schema.**
+
 ## Install the dependencies
 
 ```
