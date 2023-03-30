@@ -31,14 +31,14 @@ export default function getSchemaWithMocks() {
 
         return {
           name: faker.commerce.productName(),
-          price: faker.datatype.float({ min: 1, max: 100 }),
+          price: faker.datatype.float({ min: 1, max: 99 }),
           tax: TAXES[faker.datatype.number({ min: 0, max: 2 })],
           billedPerUnit,
           hours: billedPerUnit
             ? null
             : faker.datatype.number({ min: 2, max: 50 }),
           units: billedPerUnit
-            ? faker.datatype.number({ min: 1, max: 100 })
+            ? faker.datatype.number({ min: 1, max: 99 })
             : null
         }
       }
